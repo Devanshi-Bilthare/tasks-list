@@ -1,0 +1,26 @@
+<%- include('./Partials/header')%>
+
+      <form action="/add" method="post">
+        <input type="text" name="title" placeholder="Add Task"> <br> <br>
+      </form>
+
+   <form class="list_task">
+    <%list.forEach(task =>{%>
+    <div class="card">
+      <div class="text">
+        <p><%=task.title%></p>
+        <p><%= task.time%></p>
+      </div>
+      <div class="icons">
+        <p><a href="/update/<%=task._id%>"><i class="ri-pencil-fill"></i></a></p>
+      <p><a href="/delete/<%= task._id%>"><i class="ri-delete-bin-6-line"></i></a></p>
+      </div>
+    </div>
+  <%})%>
+   </form>
+
+  <%- include('./Partials/footer')%>
+
+ 
+
+

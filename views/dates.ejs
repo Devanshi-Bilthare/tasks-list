@@ -1,0 +1,10 @@
+<%- include('./Partials/header')%>
+
+<div class="dates">
+    <%dates.forEach(date =>{%>
+        <a href="/date/<%= date%>" class="date_card">
+            <%= date%>
+        </a>
+    <%})%>
+</div>
+<%- include('./Partials/footer')%>

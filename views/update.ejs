@@ -1,0 +1,9 @@
+<%- include('./index')%>
+
+<form action="/update/<%=singleList._id%>" method="post"  class="update_card">
+        <div>
+            <textarea name="title" id="" cols="30" rows="10"><%=singleList.title%></textarea> <br>
+            <button>Done</button>
+        </div>
+</form>
+

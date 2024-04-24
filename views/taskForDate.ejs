@@ -1,0 +1,14 @@
+<%- include('./Partials/header')%>
+
+<div class="allTasks">
+    <h3><%= date%></h3>
+    <ol>
+    <%tasks.forEach(task =>{%>
+        <div>
+            <li><%= task.title%></li>
+        <p><%= task.time%></p>
+        </div>
+    <%})%>
+</ol>
+</div>
+<%- include('./Partials/footer')%>
